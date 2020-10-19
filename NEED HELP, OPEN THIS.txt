@@ -1,0 +1,32 @@
+[create an environment in anaconda , name it scrapyenv and run it on the terminal ]
+
+activate scrapyenv
+
+[creating a new project named simple_crawler ]
+scrapy startproject simple_crawler
+
+
+[open this folder inside terminal by mentioning the path where the project file is there ]
+cd  C:\Users\hhhk\Desktop\simple_crawler\simple_crawler\spiders
+
+	
+
+[To run, execute this command in terminal]
+scrapy crawl fashion
+
+
+
+[To take output in csv format]
+scrapy crawl fashion -o Output.csv
+
+[Enabling this in settings.py and assigning it False , so that ]
+ROBOTSTXT_OBEY = False
+
+[Assigning my useragent to settings.py ]
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+
+[Decreasing the concurrent requests to 1 , so that the server dont find t suspicious]
+CONCURRENT_REQUESTS = 1
+
+[enabling the default request headers and refering it to the domain of the website]
+DEFAULT_REQUEST_HEADERS
